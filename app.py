@@ -4,7 +4,7 @@ import requests
 import os
 
 def fetch_poster(movie_id):
-    api_key = os.getenv("TMDB_API_KEY", "your_default_api_key_here")
+    api_key = os.getenv("TMDB_API_KEY", "8265bd1679663a7ea12ac168da84d2e8")
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US"
     try:
         response = requests.get(url)
